@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Fixe Breite 300px */
+.video-container {
+  width: 300px;
+}
+
+/* 16:9 Verhältnis */
+.video-container iframe {
+  width: 100%;
+  height: 169px; /* 300 * 9 / 16 */
+  border: none;
+}
