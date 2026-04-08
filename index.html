@@ -2,22 +2,58 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>YouTube Embed</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <title>Live Erde</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    button {
+      font-size: 1.2em;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 10px;
+      background: #1e90ff;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #187bcd;
+    }
+  </style>
 </head>
 <body>
 
-  <div class="video-container">
-    <iframe
-      src="https://www.youtube.com/embed/zPH5KtjJFaQ"
-      title="YouTube Video"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </div>
+<div class="container">
+  <h1>🌍 Live Blick auf die Erde</h1>
+  <button onclick="openLive()">🚀 Live-Stream starten</button>
+</div>
 
-  <script src="app.js"></script>
+<script>
+  function openLive() {
+    window.open("https://www.sen.com/live", "_blank");
+  }
+</script>
+
 </body>
 </html>
